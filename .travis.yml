@@ -2,7 +2,7 @@ sudo: required
 services:
   - docker
 before_install:
-  - docker build -t root/dockerWorkflow -f Dockerfile.dev .
+  - docker build -t root/dockerworkflow -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true root/dockerWorkflow npm run test
+  - docker run -e CI=true root/dockerworkflow npm run test
